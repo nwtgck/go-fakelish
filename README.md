@@ -40,5 +40,8 @@ Unhyle
 Reighthes
 ```
 
+## Try on The Go Playground
+<https://play.golang.org/p/_Y84Z00q6Ct>
+
 ## For JavaScript/TypeScript
 GitHub Repository: <https://github.com/nwtgck/fakelish-npm>

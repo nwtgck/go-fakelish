@@ -2,14 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/nwtgck/go-fakelish"
+	"github.com/nwtgck/go-fakelish/cmd"
+	"os"
 )
 
 func main () {
-	for i := 0; i < 10; i++ {
-		// Generate a fake word
-		fakeWord := fakelish.GenerateFakeWord(6, 9)
-		// Print the fake word
-		fmt.Println(fakeWord)
+	if err := cmd.RootCmd.Execute(); err != nil {
+		fmt.Println(err)
+		os.Exit(-1)
 	}
 }

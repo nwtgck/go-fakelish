@@ -9,7 +9,7 @@ import (
 var random = rand.New(rand.NewSource(time.Now().UnixNano()))
 
 func GenerateFakeWordWithUnexpectedLength() string {
-	maxSeq := 4 // TODO: Hard code
+	maxSeq := 2 // TODO: Hard code
 	ch := "^"
 	fakeWord := ""
 	var chrs []string

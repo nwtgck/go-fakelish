@@ -1,6 +1,8 @@
 # fakelish
 [![CircleCI](https://circleci.com/gh/nwtgck/go-fakelish.svg?style=shield)](https://circleci.com/gh/nwtgck/go-fakelish)
 
+English-like word generator
+
 ## Install
 Executable binaries are available in [GitHub Releases](https://github.com/nwtgck/go-fakelish/releases)
 
@@ -37,3 +39,6 @@ Shemon
 Unhyle
 Reighthes
 ```
+
+## For JavaScript/TypeScript
+GitHub Repository: <https://github.com/nwtgck/fakelish-npm>

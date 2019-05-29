@@ -1,4 +1,8 @@
-# go-fakelish
+# fakelish
+[![CircleCI](https://circleci.com/gh/nwtgck/go-fakelish.svg?style=shield)](https://circleci.com/gh/nwtgck/go-fakelish)
+
+## Install
+Executable binaries are available in [GitHub Releases](https://github.com/nwtgck/go-fakelish/releases)
 
 ## Usage
 

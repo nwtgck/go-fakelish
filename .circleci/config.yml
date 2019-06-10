@@ -15,7 +15,10 @@ jobs:
 
             # Just print English-like words
             ./fakelish
-          
+
+            # Just print English-like words with options
+            ./fakelish -n 50 --min=8 --max=13
+
   build:
     docker:
       - image: circleci/golang:1.12

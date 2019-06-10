@@ -20,8 +20,7 @@ Flags:
   -h, --help          help for fakelish
       --max int       max length of fake word (default 9)
       --min int       min length of fake word (default 6)
-  -n, --n-words int   number of fake words (default 10)
-
+  -n, --n-words int   number of fake words (negative makes infinite) (default 10)
 ```
 
 ## Examples
@@ -39,6 +38,9 @@ Shemon
 Unhyle
 Reighthes
 ```
+
+## Try on The Go Playground
+<https://play.golang.org/p/_Y84Z00q6Ct>
 
 ## For JavaScript/TypeScript
 GitHub Repository: <https://github.com/nwtgck/fakelish-npm>

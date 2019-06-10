@@ -17,7 +17,7 @@ func init() {
 	cobra.OnInitialize()
 	RootCmd.Flags().IntVar(&minLength,  "min", 6, "min length of fake word")
 	RootCmd.Flags().IntVar(&maxLength,  "max",  9, "max length of fake word")
-	RootCmd.Flags().IntVarP(&nWords,  "n-words",  "n", 10, "number of fake words")
+	RootCmd.Flags().IntVarP(&nWords,  "n-words",  "n", 10, "number of fake words (negative makes infinite)")
 	RootCmd.Flags().BoolVar(&enableCapitalize,  "capitalize", true, "capitalize the first letter")
 }
 
@@ -26,7 +26,9 @@ var RootCmd = &cobra.Command{
 	Short: "fakelish",
 	Long:  "English-like word generator",
 	Run: func(cmd *cobra.Command, args []string) {
-		for i := 0; i < nWords; i++ {
+		// If nWords is negative, repeat forever
+		// NOTE: i can be overflow, but it doesn't cause runtime error
+		for i := 0; nWords < 0 || i < nWords; i++ {
 			// Generate a fake word
 			fakeWord := fakelish.GenerateFakeWord(minLength, maxLength)
 			if enableCapitalize {
